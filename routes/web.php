@@ -21,4 +21,8 @@ Route::get('/Preguntas', function () {
     return view('agregar');
 });
 
+Route::get('/puntaje', function () {
+    return view('puntaje');
+});
+        
 require __DIR__.'/auth.php';
