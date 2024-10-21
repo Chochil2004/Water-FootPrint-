@@ -15,7 +15,7 @@
             <a href="agregar.html"><button class="nav-item">AGREGAR</button></a>
             <a href="modificar.html"><button class="nav-item">MODIFICAR</button></a>
         </nav>
-        <div class="preguta">
+        <div class="pregunta">
             <h1>Crear Pregunta</h1>
             <form id="questionForm">
             <div class="form-group">

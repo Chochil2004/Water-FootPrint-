@@ -18,10 +18,11 @@
                  <a href="{{ route('register') }}"><button class="user"><img src="img/user.png" alt=""></button></a> 
             </label>
         </nav>
-        <div class="content">
-            <h1>CALCULA TU</h1>
-            <h1>HUELLA HIDRICA</h1>
-            <a href="inicio.html"> <button id="startButton">INICIO</button></a>
+        <div class="content ">
+            <h1>CALCULA TU HUELLA HIDRICA</h1>
+            <div>
+                <a href="http://127.0.0.1:8000/p1"> <button id="startButton">INICIO</button></a>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
