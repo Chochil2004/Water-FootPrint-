@@ -19,6 +19,7 @@
             </label>
         </nav>
         <div class="content ">
+            <h1>prueba</h1>
             <h1>CALCULA TU HUELLA HIDRICA</h1>
             <div>
                 <a href="http://127.0.0.1:8000/p1"> <button id="startButton">INICIO</button></a>
