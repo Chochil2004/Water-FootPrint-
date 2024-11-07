@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 5: Uso de electrodomésticos y hábitos de limpieza</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit5') }}" method="POST">
         @csrf
         <label for="pregunta8">8. ¿Con qué frecuencia utilizas la lavadora?</label><br>
         <input type="radio" name="pregunta8" value="1"> Menos de 1 vez por semana <br>

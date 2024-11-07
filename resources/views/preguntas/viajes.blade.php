@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 10. Viajes y transporte a larga distancia</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit10') }}" method="POST">
         @csrf
         <label for="pregunta19">19. ¿Con qué frecuencia viajas en avión?</label><br>
         <input type="radio" name="pregunta19" value="1"> Menos de una vez por año <br>

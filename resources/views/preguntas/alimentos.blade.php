@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Seccion 2. Consumo de alimentos</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit2') }}" method="POST">
         @csrf
         
         <label for="pregunta3">3. ¿Cuánto consumo de carne tienes semanalmente?</label><br>

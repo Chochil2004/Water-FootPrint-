@@ -21,7 +21,7 @@
         <div class="content ">
             <h1>CALCULA TU HUELLA HIDRICA</h1>
             <div>
-                <a href="http://127.0.0.1:8000/p1"> <button id="startButton">INICIO</button></a>
+                <a href="http://127.0.0.1:8000/usodirecto"> <button id="startButton">INICIO</button></a>
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 3. Consumo de productos y bienes</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit3') }}" method="POST">
         @csrf
         <label for="pregunta5">5. ¿Con qué frecuencia compras ropa nueva?</label><br>
         <input type="radio" name="pregunta5" value="1"> Menos de 1 vez al año <br>

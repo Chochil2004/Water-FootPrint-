@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 4. Transporte</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit4') }}" method="POST">
         @csrf
         <label for="pregunta7"> 7. ¿Qué medio de transporte utilizas con mayor frecuencia?</label><br>
         <input type="radio" name="pregunta7" value="1"> Transporte publico o bicicleta <br>

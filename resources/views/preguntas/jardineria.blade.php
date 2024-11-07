@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 8. Jardinería y cuidado de areas verdes</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit8') }}" method="POST">
         @csrf
         <!-- Pregunta 1 -->
         <label for="pregunta15">15. ¿Cómo mantienes tu jardín o áreas verdes?</label><br>

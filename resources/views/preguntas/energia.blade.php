@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 7. Uso de energía y calefacción</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit7') }}" method="POST">
         @csrf
         <label for="pregunta13">13. ¿Qué tipo de energía utilizas principalmente en tu hogar?</label><br>
         <input type="radio" name="pregunta13" value="1"> Energía renovable <br>

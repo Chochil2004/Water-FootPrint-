@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 6. Uso de agua en el hogar</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit6') }}" method="POST">
         @csrf
         <label for="pregunta11">11. ¿Cuánto tiempo te tomas en la ducha?</label><br>
         <input type="radio" name="pregunta11" value="1"> Menos de 5 minutos <br>

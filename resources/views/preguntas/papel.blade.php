@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Sección 9. Consumo de bienes y productos de papel</h1>
-    <form action="{{ route('cuestionario.submit') }}" method="POST">
+    <form action="{{ route('cuestionario.submit9') }}" method="POST">
         @csrf
         <label for="pregunta17">17. ¿Con qué frecuencia compras productos de papel (servilletas, toallas de papel, etc.)?</label><br>
         <input type="radio" name="pregunta17" value="1"> Menos de 1 vez al mes <br>
