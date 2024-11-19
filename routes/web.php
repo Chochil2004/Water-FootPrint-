@@ -29,44 +29,45 @@ Route::get('/puntaje', function () {
 require __DIR__.'/auth.php';
 
 //Seccion 1
-Route::get('/usodirecto', [CuestionarioController::class, 'mostrarCuestionario'])->name('usodirecto');
-Route::post('/usodirecto', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit1');
+Route::get('/usodirecto', [CuestionarioController::class, 'usodirecto'])->name('usodirecto');
+Route::post('/usodirecto', [CuestionarioController::class, 'submitUsoDirecto'])->name('cuestionario.submit1');
 
 //Seccion 2
-Route::get('/alimentos', [CuestionarioController::class, 'mostrarCuestionario'])->name('alimentos');
-Route::post('/alimentos', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit2');
+Route::get('/alimentos', [CuestionarioController::class, 'alimentos'])->name('alimentos');
+Route::post('/alimentos', [CuestionarioController::class, 'submitAlimentos'])->name('cuestionario.submit2');
 
 //Seccion 3
-Route::get('/productosybienes', [CuestionarioController::class, 'mostrarCuestionario'])->name('productosybienes');
-Route::post('/productosybienes', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit3');
+Route::get('/productosybienes', [CuestionarioController::class, 'productosybienes'])->name('productosybienes');
+Route::post('/productosybienes', [CuestionarioController::class, 'submitProductosyBienes'])->name('cuestionario.submit3');
 
 //Seccion 4
-Route::get('/transporte', [CuestionarioController::class, 'mostrarCuestionario'])->name('transporte');
-Route::post('/transporte', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit4');
+Route::get('/transporte', [CuestionarioController::class, 'transporte'])->name('transporte');
+Route::post('/transporte', [CuestionarioController::class, 'submitTransporte'])->name('cuestionario.submit4');
 
 //Seccion 5
-Route::get('/electrodomesticos', [CuestionarioController::class, 'mostrarCuestionario'])->name('electrodomesticos');
-Route::post('/electrodomesticos', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit5');
+Route::get('/electrodomesticos', [CuestionarioController::class, 'electrodomesticos'])->name('electrodomesticos');
+Route::post('/electrodomesticos', [CuestionarioController::class, 'submitElectrodomesticos'])->name('cuestionario.submit5');
 
 //Seccion 6
-Route::get('/hogar', [CuestionarioController::class, 'mostrarCuestionario'])->name('hogar');
-Route::post('/hogar', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit6');
+Route::get('/hogar', [CuestionarioController::class, 'hogar'])->name('hogar');
+Route::post('/hogar', [CuestionarioController::class, 'submitHogar'])->name('cuestionario.submit6');
 
 //Seccion 7
-Route::get('/energia', [CuestionarioController::class, 'mostrarCuestionario'])->name('energia');
-Route::post('/energia', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit7');
+Route::get('/energia', [CuestionarioController::class, 'energia'])->name('energia');
+Route::post('/energia', [CuestionarioController::class, 'submitEnergia'])->name('cuestionario.submit7');
 
 //Seccion 8
-Route::get('/jardineria', [CuestionarioController::class, 'mostrarCuestionario'])->name('jardineria');
-Route::post('/jardineria', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit8');
+Route::get('/jardineria', [CuestionarioController::class, 'jardineria'])->name('jardineria');
+Route::post('/jardineria', [CuestionarioController::class, 'submitJardineria'])->name('cuestionario.submit8');
 
 //Seccion 9
-Route::get('/papel', [CuestionarioController::class, 'mostrarCuestionario'])->name('papel');
-Route::post('/papel', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit9');
+Route::get('/papel', [CuestionarioController::class, 'papel'])->name('papel');
+Route::post('/papel', [CuestionarioController::class, 'submitPapel'])->name('cuestionario.submit9');
 
 //Seccion 10
-Route::get('/transporte', [CuestionarioController::class, 'mostrarCuestionario'])->name('transporte');
-Route::post('/transporte', [CuestionarioController::class, 'procesarCuestionario'])->name('cuestionario.submit10');
+Route::get('/viajes', [CuestionarioController::class, 'viajes'])->name('viajes');
+Route::post('/viajes', [CuestionarioController::class, 'submitViajes'])->name('cuestionario.submit10');
 
 //Resultado final
-Route::post('/resultado', [CuestionarioController::class, 'resultado'])->name('cuestionario.resultado');
+Route::post('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
+Route::get('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
