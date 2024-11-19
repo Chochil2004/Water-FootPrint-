@@ -71,3 +71,6 @@ Route::post('/viajes', [CuestionarioController::class, 'submitViajes'])->name('c
 //Resultado final
 Route::post('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
 Route::get('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
+
+//Tabla de puntuaciones
+Route::get('/marcador', [CuestionarioController::class, 'puntuaciones'])->name('cuestionario.puntuaciones');

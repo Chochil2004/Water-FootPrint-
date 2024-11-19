@@ -123,4 +123,13 @@ class CuestionarioController extends Controller
         return view('puntaje', ['puntuacion' => $puntuacion]);
         return redirect()->route('cuestionario.puntuacion');
     }
+
+    public function puntuaciones()
+    {
+        // Obtener todas las puntuaciones con la relación al usuario, si aplica
+        $puntuaciones = RespuestaCuestionario::with('usuario')->get();
+
+        // Pasar las puntuaciones a la vista
+        return view('marcador', compact('puntuaciones'));
+    }
 }

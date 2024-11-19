@@ -22,4 +22,9 @@ class RespuestaCuestionario extends Model
     protected $casts = [
         'respuestas' => 'array', // Convierte automáticamente las respuestas en un arreglo cuando se obtiene
     ];
+
+    public function usuario()
+    {
+        return $this->belongsTo(User::class, 'usuario_id');
+    }
 }
