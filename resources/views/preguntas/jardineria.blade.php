@@ -19,8 +19,8 @@
         <!-- Pregunta 2 -->
         <label for="pregunta16">16. ¿Con qué frecuencia riegas el césped o jardín?</label><br>
         <input type="radio" name="pregunta16" value="1"> Nunca o cuando llueve <br>
-        <input type="radio" name="pregunta16" value="0"> 1-2 veces por semana <br>
-        <input type="radio" name="pregunta16" value="0"> Diariamente <br><br>
+        <input type="radio" name="pregunta16" value="2"> 1-2 veces por semana <br>
+        <input type="radio" name="pregunta16" value="3"> Diariamente <br><br>
 
         <button type="submit">Enviar Respuestas</button>
     </form>

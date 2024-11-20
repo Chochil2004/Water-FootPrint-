@@ -17,8 +17,8 @@
 
         <label for="pregunta2">2. ¿Con qué frecuencia te duchas o bañas?</label><br>
         <input type="radio" name="pregunta2" value="1"> 1 vez al día <br>
-        <input type="radio" name="pregunta2" value="0"> 1 vez cada dos días <br>
-        <input type="radio" name="pregunta2" value="0"> Menos de 3 veces a la semana <br><br>
+        <input type="radio" name="pregunta2" value="2"> 1 vez cada dos días <br>
+        <input type="radio" name="pregunta2" value="3"> Menos de 3 veces a la semana <br><br>
 
         <button type="submit">Enviar Respuestas</button>
     </form>

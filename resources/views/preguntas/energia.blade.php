@@ -17,8 +17,8 @@
 
         <label for="pregunta14">14. ¿Tienes calefacción o aire acondicionado central?</label><br>
         <input type="radio" name="pregunta14" value="1"> No uso calefacción o aire acondicionado <br>
-        <input type="radio" name="pregunta14" value="0"> Uso calefacción o aire acondicionado de manera eficiente <br>
-        <input type="radio" name="pregunta14" value="0"> Uso calefacción o aire acondicionado de manera intensiva <br><br>
+        <input type="radio" name="pregunta14" value="2"> Uso calefacción o aire acondicionado de manera eficiente <br>
+        <input type="radio" name="pregunta14" value="3"> Uso calefacción o aire acondicionado de manera intensiva <br><br>
 
         <button type="submit">Enviar Respuestas</button>
     </form>

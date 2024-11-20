@@ -6,7 +6,7 @@
 <div class="container">
     <nav class="navbar">
         <label for="" class="brand">
-            <a href="home.html"><img src="img/logo1.png" alt=""></a>
+            <a href="/"><img src="img/logo1.png" alt=""></a>
         </label>
         <a href="marcador"><button class="nav-item">MARCADORES</button></a>
         <a href="creditos"><button class="nav-item">CREDITOS</button></a>

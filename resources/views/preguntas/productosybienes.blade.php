@@ -16,9 +16,9 @@
         <input type="radio" name="pregunta5" value="3"> Más de 3 veces al año <br><br>
 
         <label for="pregunta6">6. ¿Con qué frecuencia compras productos electrónicos (teléfonos, computadoras, etc.)?</label><br>
-        <input type="radio" name="pregunta2" value="1"> Rara vez o nunca <br>
-        <input type="radio" name="pregunta2" value="2"> 1 cada 2-3 años <br>
-        <input type="radio" name="pregunta2" value="3"> Mas de 1 vez al año <br><br>
+        <input type="radio" name="pregunta6" value="1"> Rara vez o nunca <br>
+        <input type="radio" name="pregunta6" value="2"> 1 cada 2-3 años <br>
+        <input type="radio" name="pregunta6 " value="3"> Mas de 1 vez al año <br><br>
 
         <button type="submit">Enviar Respuestas</button>
     </form>
