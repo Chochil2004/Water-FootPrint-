@@ -19,11 +19,10 @@
             </label>
         </nav>
         <div class="content ">
-            <h1>prueba</h1>
             <h1>CALCULA TU HUELLA HIDRICA</h1>
-            <div>
-                <a href="http://127.0.0.1:8000/usodirecto"> <button id="startButton">INICIO</button></a>
-            </div>
+        <div>
+            <a href="http://127.0.0.1:8000/register"> <button id="startButton">INICIO</button></a>
+        </div>
         </div>
     </div>
     <script src="scripts.js"></script>

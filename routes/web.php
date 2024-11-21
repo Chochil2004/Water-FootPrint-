@@ -3,13 +3,14 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CuestionarioController;
+use App\Http\Controllers\HuellaHidricaController;
 
 Route::get('/', function () {
     return view('home');
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('preguntas/usodirecto');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -74,3 +75,7 @@ Route::get('/puntaje', [CuestionarioController::class, 'resultado'])->name('cues
 
 //Tabla de puntuaciones
 Route::get('/marcador', [CuestionarioController::class, 'puntuaciones'])->name('cuestionario.puntuaciones');
+
+// Ruta para los mapas
+Route::post('/mapa', [HuellaHidricaController::class, 'mostrarMapa'])->name('mapa.submit');
+Route::get('/mapa', [HuellaHidricaController::class, 'mostrarMapa'])->name('huella.mapas');

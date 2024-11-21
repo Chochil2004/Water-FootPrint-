@@ -16,6 +16,7 @@ class RespuestaCuestionario extends Model
         'usuario_id',
         'respuestas',
         'puntuacion_total',
+        'huella_hidrica',
     ];
 
     // Definir que 'respuestas' es un campo de tipo JSON
@@ -27,4 +28,10 @@ class RespuestaCuestionario extends Model
     {
         return $this->belongsTo(User::class, 'usuario_id');
     }
+
+    public function puntuacion()
+    {
+        return $this->belongsTo(User::class, 'puntuacion_total');
+    }
+
 }

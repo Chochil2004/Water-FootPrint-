@@ -21,7 +21,7 @@
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Constraseña')" />
+            <x-input-label for="password" :value="__('Contraseña')" />
 
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
@@ -49,6 +49,7 @@
 
             <x-primary-button class="ms-4 ">
                 {{ __('Registrarme') }}
+
             </x-primary-button>
         </div>
     </form>

@@ -22,7 +22,7 @@
                         <a href="/">
                             <img src="assets\images\logo.png" alt=""></a> 
                     </li>
-                    <li class="text-white font-semibold">REGISTRO ADMINISTRADOR</li>
+                    <li class="text-white font-semibold">REGISTRO</li>
                     <li class="text-white font-semibold">INICIO</li>
                 </ul>
             </nav>

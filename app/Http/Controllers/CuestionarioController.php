@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\HuellaHidricaController;
 use App\Models\RespuestaCuestionario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -103,7 +104,6 @@ class CuestionarioController extends Controller
         return redirect()->route('cuestionario.puntaje');
     }
 
-    //Resultado final
     public function resultado(Request $request) {
         $respuestas = session('respuestas');
         $puntuacion = 0;
@@ -126,10 +126,27 @@ class CuestionarioController extends Controller
 
     public function puntuaciones()
     {
-        // Obtener todas las puntuaciones con la relación al usuario, si aplica
         $puntuaciones = RespuestaCuestionario::with('usuario')->get();
 
-        // Pasar las puntuaciones a la vista
         return view('marcador', compact('puntuaciones'));
     }
+
+    public function guardarRespuestas(Request $request){
+        
+        $respuestas = $request->input('respuestas'); // Respuestas del cuestionario
+        $puntuacion = $this->calcularPuntuacion($respuestas); // Método existente
+    
+        // Calcular huella hídrica en base a la puntuación
+        $huellaHidrica = $this->calcularHuellaHidrica($puntuacion);
+    
+        RespuestaCuestionario::create([
+            'usuario_id' => auth()->id(),
+            'puntuacion' => $puntuacion,
+            'huella_hidrica' => $huellaHidrica,
+            'respuestas' => json_encode($respuestas),
+        ]);
+    
+        return redirect()->route('huella.mapas');
+    }
+
 }
