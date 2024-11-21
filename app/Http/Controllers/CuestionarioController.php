@@ -133,8 +133,3 @@ class CuestionarioController extends Controller
         return view('marcador', compact('puntuaciones'));
     }
 }
-
-
-
-
-
