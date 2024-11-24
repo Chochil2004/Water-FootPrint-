@@ -1,90 +1,98 @@
+/* General */
 body {
     text-align: center;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    width: auto;
-    max-width: auto;
-    padding: 0;
-    position: relative;
+    background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-
+    padding: 0;
 }
 
+/* Navbar */
 .navbar {
     background: linear-gradient(to right, #4b8fd1, #34d3b2);
-    padding: 10px 10px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
-    padding-left: px;
-    background-color: transparent;
-    border: none;
     color: white;
     font-weight: bold;
-    cursor: pointer;
     font-size: 16px;
-    align-items: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .nav-item:hover {
+    color: #f6fbff;
     text-decoration: underline;
 }
 
-.content{
-    position: relative;
-    justify-content: space-between;
-    padding-top: 200px;
+/* Content */
+.content {
+    padding: 100px 20px;
 }
 
 .content h1 {
     color: #4b8fd1;
-    text-shadow: white;
-    font-size: 300%;
-    margin: 1px 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
+/* Buttons */
 #startButton {
-    background: grey;
+    background: #4b8fd1;
     border: none;
-    padding: 20px 45px;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #startButton:hover {
-    background:linear-gradient(to right, #4b8fd1, #34d3b2);
-    color: #f6fbff;
-    border-color: #4b8fd1;
+    background: linear-gradient(to right, #34d3b2, #4b8fd1);
+    color: #fff;
+    transform: scale(1.05);
 }
 
-.brand img{
-    padding-top: 2px;
-    width: 30px;
-    height: 30px;
+/* Brand */
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
-.user{
+/* User Button */
+.user {
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
+/* Questions Section */
 .pregunta {
-    position: relative;
     width: 50%;
     margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
+.pregunta:hover {
+    transform: translateY(-5px);
+}
+
+/* Form Elements */
 .form-group {
     margin-bottom: 15px;
 }
@@ -97,52 +105,53 @@ label {
 
 input[type="text"],
 select {
-    width: auto;
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
+/* Buttons in Form */
 .preg {
-    display: flex;
-    width: auto;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 10px 20px;
     background-color: #28a745;
-    color: white;
-    border-radius: 4px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .preg:hover {
     background-color: #218838;
 }
 
-.pregun{
+.pregun {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
 
-.preg {
-    width: auto; /* Cambiar el ancho a automático para evitar ocupar todo el ancho */
-    padding: 10px 20px; /* Añadir padding horizontal para hacer los botones más amplios */
-}
+/* Responsive */
+@media (max-width: 768px) {
+    .pregunta {
+        width: 90%;
+    }
 
-button + button {
-    margin-left: 10px; /* Añadir espacio entre los botones */
-}
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-h1{
-    padding-top: 100px;
-    color: #4b8fd1;
-    text-shadow: white;
-    font-size: 300%;
-    margin: 1px 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    #startButton {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
 }
