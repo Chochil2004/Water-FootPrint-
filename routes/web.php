@@ -77,5 +77,4 @@ Route::get('/puntaje', [CuestionarioController::class, 'resultado'])->name('cues
 Route::get('/marcador', [CuestionarioController::class, 'puntuaciones'])->name('cuestionario.puntuaciones');
 
 // Ruta para los mapas
-Route::post('/mapa', [HuellaHidricaController::class, 'mostrarMapa'])->name('mapa.submit');
-Route::get('/mapa', [HuellaHidricaController::class, 'mostrarMapa'])->name('huella.mapas');
+Route::get('/mapa', [CuestionarioController::class, 'mostrarMapa'])->name('mapa.mostrar');

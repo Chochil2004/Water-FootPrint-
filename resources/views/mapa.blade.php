@@ -9,6 +9,7 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Impacto de la Huella Hídrica</h1>
+        <p>Tu nivel de huella hídrica es: <strong>{{ ucfirst($nivel) }}</strong></p>
         <div class="text-center">
             @if ($nivel === 'baja')
                 <img src="/storage/mapas/mapa_baja.png" alt="Mapa Baja Huella Hídrica" class="img-fluid">
