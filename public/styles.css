@@ -1,4 +1,4 @@
-/* General */
+
 body {
     text-align: center;
     background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-/* Navbar */
+
 .navbar {
     background: linear-gradient(to right, #4b8fd1, #34d3b2);
     padding: 15px 20px;
@@ -31,7 +31,7 @@ body {
     text-decoration: underline;
 }
 
-/* Content */
+
 .content {
     padding: 100px 20px;
 }
@@ -43,7 +43,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Buttons */
+
 #startButton {
     background: #4b8fd1;
     border: none;
@@ -63,21 +63,21 @@ body {
     transform: scale(1.05);
 }
 
-/* Brand */
+
 .brand img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-/* User Button */
+
 .user {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
-/* Questions Section */
+
 .pregunta {
     width: 50%;
     margin: 50px auto;
@@ -92,7 +92,7 @@ body {
     transform: translateY(-5px);
 }
 
-/* Form Elements */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -114,7 +114,7 @@ select {
     font-size: 16px;
 }
 
-/* Buttons in Form */
+
 .preg {
     padding: 10px 20px;
     background-color: #28a745;
@@ -139,7 +139,7 @@ select {
     margin-top: 20px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .pregunta {
         width: 90%;
