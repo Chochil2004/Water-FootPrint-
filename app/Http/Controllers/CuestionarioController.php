@@ -104,6 +104,7 @@ class CuestionarioController extends Controller
         return redirect()->route('cuestionario.puntaje');
     }
 
+
     public function resultado(Request $request) {
         $respuestas = session('respuestas');
         $puntuacion = 0;
@@ -117,36 +118,48 @@ class CuestionarioController extends Controller
         $respuestaCuestionario = new RespuestaCuestionario();
         $respuestaCuestionario->usuario_id = $usuarioId;
         $respuestaCuestionario->respuestas = $respuestas;  
-        $respuestaCuestionario->puntuacion_total = $puntuacion;
+        $respuestaCuestionario->puntuacion_total = $puntuacion; 
         $respuestaCuestionario->save();
 
         return view('puntaje', ['puntuacion' => $puntuacion]);
         return redirect()->route('cuestionario.puntuacion');
     }
 
-    public function puntuaciones()
+    public function puntuaciones($puntuacion)
     {
-        $puntuaciones = RespuestaCuestionario::with('usuario')->get();
+        $puntuacion = RespuestaCuestionario::with('usuario')->get();
 
         return view('marcador', compact('puntuaciones'));
     }
 
-    public function guardarRespuestas(Request $request){
-        
-        $respuestas = $request->input('respuestas'); // Respuestas del cuestionario
-        $puntuacion = $this->calcularPuntuacion($respuestas); // Método existente
-    
-        // Calcular huella hídrica en base a la puntuación
-        $huellaHidrica = $this->calcularHuellaHidrica($puntuacion);
-    
-        RespuestaCuestionario::create([
-            'usuario_id' => auth()->id(),
-            'puntuacion' => $puntuacion,
-            'huella_hidrica' => $huellaHidrica,
-            'respuestas' => json_encode($respuestas),
+    public function mostrarMapa()
+    {
+        // Obtener la respuesta más reciente del usuario autenticado
+        $respuesta = RespuestaCuestionario::where('usuario_id', Auth::id())->latest()->first();
+
+        if (!$respuesta) {
+            return redirect()->route('cuestionario')->with('error', 'No se encontró ninguna respuesta. Por favor, completa el cuestionario primero.');
+        }
+
+        // Determinar el nivel de huella hídrica
+        $nivel = $this->determinarNivelHuella($respuesta->puntuacion_total);
+
+        // Pasar el nivel a la vista
+        return view('mapa', [
+            'nivel' => $nivel,
         ]);
-    
-        return redirect()->route('huella.mapas');
     }
 
+    private function determinarNivelHuella($puntuacion)
+    {
+        if ($puntuacion <= 30) {
+            return 'baja'; // Huella hídrica baja
+        } elseif ($puntuacion <= 45) {
+            return 'moderada'; // Huella hídrica moderada
+        } elseif ($puntuacion <= 55) {
+            return 'alta'; // Huella hídrica alta
+        } else {
+            return 'muy_alta'; // Huella hídrica muy alta
+        }
+    }
 }

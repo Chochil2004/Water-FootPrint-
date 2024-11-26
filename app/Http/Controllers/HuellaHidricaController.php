@@ -8,6 +8,7 @@ use App\Models\RespuestaCuestionario;
 
 class HuellaHidricaController extends Controller
 {
+
     public function mostrarMapa(){
 
         $respuesta = RespuestaCuestionario::where('usuario_id', auth()->id())
