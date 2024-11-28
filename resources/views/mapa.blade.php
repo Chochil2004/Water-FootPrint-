@@ -12,16 +12,16 @@
         <p>Tu nivel de huella hídrica es: <strong>{{ ucfirst($nivel) }}</strong></p>
         <div class="text-center">
             @if ($nivel === 'baja')
-                <img src="/storage/mapas/mapa_baja.png" alt="Mapa Baja Huella Hídrica" class="img-fluid">
+                <img src="img/mapas/mapa_baja.jpg" alt="Mapa Baja Huella Hídrica" class="img-fluid">
                 <p>Tu huella hídrica es baja. ¡Buen trabajo!</p>
             @elseif ($nivel === 'moderada')
-                <img src="/storage/mapas/mapa_moderada.png" alt="Mapa Moderada Huella Hídrica" class="img-fluid">
+                <img src="/img/mapas/mapa_moderada.jpg" alt="Mapa Moderada Huella Hídrica" class="img-fluid">
                 <p>Tu huella hídrica es moderada. Considera reducir tu consumo.</p>
             @elseif ($nivel === 'alta')
-                <img src="/storage/mapas/mapa_moderada.png" alt="Mapa Moderada Huella Hídrica" class="img-fluid">
+                <img src="/img/mapas/mapa_alta.jpg" alt="Mapa Moderada Huella Hídrica" class="img-fluid">
                 <p>Tu huella hídrica es alta. Considera reducir tu consumo.</p>
             @else
-                <img src="/storage/mapas/mapa_alta.png" alt="Mapa Alta Huella Hídrica" class="img-fluid">
+                <img src="/img/mapas/mapa_muyalta.jpg" alt="Mapa Alta Huella Hídrica" class="img-fluid">
                 <p>Tu huella hídrica es muy alta. ¡Es urgente tomar medidas!</p>
             @endif
         </div>

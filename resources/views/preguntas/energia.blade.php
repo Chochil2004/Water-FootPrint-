@@ -21,7 +21,7 @@
         <input type="radio" name="pregunta14" value="2"> Uso calefacción o aire acondicionado de manera eficiente <br>
         <input type="radio" name="pregunta14" value="3"> Uso calefacción o aire acondicionado de manera intensiva <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

@@ -16,7 +16,7 @@
         <input type="radio" name="pregunta7" value="2"> Automovil compartido <br>
         <input type="radio" name="pregunta7" value="3"> Automovil propio o moto <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

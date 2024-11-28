@@ -26,7 +26,7 @@
         <input type="radio" name="pregunta10" value="2"> Lo lavo a mano usando baldes <br>
         <input type="radio" name="pregunta10" value="3"> Lo lavo con manguera <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

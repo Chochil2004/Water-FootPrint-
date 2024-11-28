@@ -21,7 +21,7 @@
         <input type="radio" name="pregunta6" value="2"> 1 cada 2-3 años <br>
         <input type="radio" name="pregunta6 " value="3"> Mas de 1 vez al año <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

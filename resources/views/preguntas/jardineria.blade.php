@@ -23,7 +23,7 @@
         <input type="radio" name="pregunta16" value="2"> 1-2 veces por semana <br>
         <input type="radio" name="pregunta16" value="3"> Diariamente <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

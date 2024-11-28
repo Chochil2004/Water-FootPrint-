@@ -21,7 +21,7 @@
         <input type="radio" name="pregunta12" value="2"> Parcialmente <br>
         <input type="radio" name="pregunta12" value="3"> No <br><br>
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

@@ -22,7 +22,7 @@
         <input type="radio" name="pregunta20" value="3"> Auto propio <br><br>
 
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Enviar Respuestas</button>
     </form>
 </body>
 </html>

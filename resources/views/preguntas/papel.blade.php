@@ -22,7 +22,7 @@
         <input type="radio" name="pregunta18" value="3"> Nunca <br><br>
 
 
-        <button type="submit">Enviar Respuestas</button>
+        <button type="submit" id="startButton">Siguiente</button>
     </form>
 </body>
 </html>

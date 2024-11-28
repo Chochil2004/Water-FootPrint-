@@ -134,17 +134,14 @@ class CuestionarioController extends Controller
 
     public function mostrarMapa()
     {
-        // Obtener la respuesta más reciente del usuario autenticado
         $respuesta = RespuestaCuestionario::where('usuario_id', Auth::id())->latest()->first();
 
         if (!$respuesta) {
             return redirect()->route('cuestionario')->with('error', 'No se encontró ninguna respuesta. Por favor, completa el cuestionario primero.');
         }
 
-        // Determinar el nivel de huella hídrica
         $nivel = $this->determinarNivelHuella($respuesta->puntuacion_total);
 
-        // Pasar el nivel a la vista
         return view('mapa', [
             'nivel' => $nivel,
         ]);
@@ -153,13 +150,13 @@ class CuestionarioController extends Controller
     private function determinarNivelHuella($puntuacion)
     {
         if ($puntuacion <= 30) {
-            return 'baja'; // Huella hídrica baja
+            return 'baja'; 
         } elseif ($puntuacion <= 45) {
-            return 'moderada'; // Huella hídrica moderada
+            return 'moderada'; 
         } elseif ($puntuacion <= 55) {
-            return 'alta'; // Huella hídrica alta
+            return 'alta'; 
         } else {
-            return 'muy_alta'; // Huella hídrica muy alta
+            return 'muy_alta'; 
         }
     }
 }

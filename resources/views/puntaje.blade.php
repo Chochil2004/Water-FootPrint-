@@ -24,7 +24,7 @@
                     Este valor refleja tu consumo total de agua según tus actividades diarias.
                 </p>
             </div>
-            <a href="mapa"><button class="submit">Ver más detalles</button>
+            <a href="mapa"><button class="submit" id="startButton">Ver más detalles</button>
         </div>
     </div>
 </x-app-layout>
