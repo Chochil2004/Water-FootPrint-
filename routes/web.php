@@ -70,7 +70,7 @@ Route::get('/viajes', [CuestionarioController::class, 'viajes'])->name('viajes')
 Route::post('/viajes', [CuestionarioController::class, 'submitViajes'])->name('cuestionario.submit10');
 
 //Resultado final
-Route::post('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
+Route::post('/puntaje', [CuestionarioController::class, 'resultado'])->name('puntaje');
 Route::get('/puntaje', [CuestionarioController::class, 'resultado'])->name('cuestionario.puntaje');
 
 //Tabla de puntuaciones
