@@ -16,6 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
 }
 
 .nav-item {
@@ -127,6 +128,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
 #startButton:hover {
@@ -153,17 +155,16 @@ body {
 #pregunta{
     background: #fff;
     display: flex;
-    width: 80vh;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px;
-    margin-left: 30%;
-    margin-bottom: 20vh;
-    margin-top: 5vh;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.pregunta {
+#resultado {
     width: 50%;
     margin: 50px auto;
     background: #fff;
@@ -213,6 +214,10 @@ select {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+#contenedorp {
+    padding: 20px;
+}
+
 .preg:hover {
     background-color: #218838;
 }
@@ -226,6 +231,15 @@ select {
 
 
 @media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    #pregunta {
+        padding: 15px;
+    }
+
     .pregunta {
         width: 90%;
     }
@@ -238,5 +252,18 @@ select {
     #startButton {
         font-size: 16px;
         padding: 10px 30px;
+    }
+
+    @media (max-width: 480px) {
+        #pregunta {
+            width: 90%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    
+        #startButton {
+            font-size: 12px;
+            padding: 8px 15px;
+        }
     }
 }

@@ -1,4 +1,3 @@
-<!-- resources/views/pregunta/cuestionario.blade.php -->
 <!DOCTYPE html>
 <html lang="es">
 <head>

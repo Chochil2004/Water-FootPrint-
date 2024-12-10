@@ -7,7 +7,7 @@
 
 <body id="puntuacionbody">
     <div class="container">
-        <div class="pregunta">
+        <div id="resultado">
             <h2 id="punth2">Resumen de tu Huella Hídrica</h2>
             <div id="contenido-huella">
                 <h1>Tu huella hídrica es de:</h1>

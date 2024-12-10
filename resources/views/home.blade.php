@@ -12,9 +12,6 @@
             <label for="" class="brand">
                 <a href="home.html"><img src="img/logo1.png" alt=""></a>
             </label>
-            <label for="" class="brand">
-                 <a href="{{ route('register') }}"><button class="user"><img src="img/user.png" alt=""></button></a> 
-            </label>
         </nav>
     <div class="content">
         <h1 id="bodyh1">CALCULA TU HUELLA HIDRICA</h1>
