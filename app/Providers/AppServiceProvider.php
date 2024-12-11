@@ -11,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        Blade::component('wfs', App\View\Components\Wfs::class);
     }
 
     /**
