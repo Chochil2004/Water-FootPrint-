@@ -12,6 +12,6 @@ class wfs extends Component
      */
     public function render(): View
     {
-        return view('layouts.wfs');
+        return view('components.wfs');
     }
 }

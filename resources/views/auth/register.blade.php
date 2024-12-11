@@ -53,4 +53,4 @@
             </x-primary-button>
         </div>
     </form>
-</x-wfs-layout>
+</x-wfs>
