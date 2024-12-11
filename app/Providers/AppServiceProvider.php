@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade; // Importación necesaria
-use App\View\Components\Wfs;
+use App\View\Components\wfs;
 
 class AppServiceProvider extends ServiceProvider
 {
